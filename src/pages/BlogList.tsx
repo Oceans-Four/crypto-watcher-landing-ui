@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import PageLayout from '../layouts/PageLayout';
 import BlogSidebar from '../components/Blog/BlogSidebar';
@@ -13,14 +13,14 @@ import avatar2 from './../assets/images/avatar/avatar2.jpg';
 import avatar3 from './../assets/images/avatar/avatar3.jpg';
 
 const blocardList = [
-    {image: blog1, image2: avatar1, title:'Five Things To Avoid In Cryptocurrency'},
-    {image: blog2, image2: avatar2, title:'Things That Make You Love Cryptocurrency'},
-    {image: blog3, image2: avatar3, title:'Why You Should Not Go To crypto currency.'},
-    {image: blog4, image2: avatar1, title:'14 Days To A Better Crypto Currency.'},
+    { image: blog1, image2: avatar1, title: 'Five Things To Avoid In Cryptocurrency' },
+    { image: blog2, image2: avatar2, title: 'Things That Make You Love Cryptocurrency' },
+    { image: blog3, image2: avatar3, title: 'Why You Should Not Go To crypto currency.' },
+    { image: blog4, image2: avatar1, title: '14 Days To A Better Crypto Currency.' },
 ];
 
-function BlogList(){
-    return(
+const BlogList = () => {
+    return (
         <>
             <div className="page-content">
                 <PageLayout pageTitle="Blog List Sidebar" />
@@ -29,7 +29,7 @@ function BlogList(){
                         <div className="row ">
                             <div className="col-xl-8 col-lg-8">
                                 <div className="row">
-                                    {blocardList.map((item, index)=>(
+                                    {blocardList.map((item, index) => (
                                         <div className="col-lg-12 m-b40" key={index}>
                                             <div className="dz-card style-1 blog-half">
                                                 <div className="dz-media">
@@ -44,7 +44,7 @@ function BlogList(){
                                                         <ul>
                                                             <li className="post-author">
                                                                 <Link to={"#"}>
-                                                                    <img src={item.image2} alt="" className="me-2"/>
+                                                                    <img src={item.image2} alt="" className="me-2" />
                                                                     <span>By Noare</span>
                                                                 </Link>
                                                             </li>

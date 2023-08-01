@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import PageLayout from '../layouts/PageLayout';
 import BlogSidebar from '../components/Blog/BlogSidebar';
@@ -13,16 +13,21 @@ import pic4 from './../assets/images/blog/pic4.jpg';
 import pic5 from './../assets/images/blog/pic5.jpg';
 
 const relatedBlog = [
-    { image1: pic4, image2: avat2, title:'Why You Should Not Go To Cryptocurrency.'},
-    { image1: pic5, image2: avat3, title:'Five Easy Rules Of bitcoin.'},
+    { image1: pic4, image2: avat2, title: 'Why You Should Not Go To Cryptocurrency.' },
+    { image1: pic5, image2: avat3, title: 'Five Easy Rules Of bitcoin.' },
 ];
 
-const CommentBlog = ({image, title}) =>{
-    return(
+type CommentProps = {
+    image: string,
+    title: string
+}
+
+const CommentBlog = ({ image, title }: CommentProps) => {
+    return (
         <>
             <div className="comment-body">
-                <div className="comment-author vcard"> 
-                    <img className="avatar photo" src={image} alt="" /> 
+                <div className="comment-author vcard">
+                    <img className="avatar photo" src={image} alt="" />
                 </div>
                 <div className="comment-info">
                     <div className="title">
@@ -30,8 +35,8 @@ const CommentBlog = ({image, title}) =>{
                         <span>07 March, 2022</span>
                     </div>
                     <p>Integer consectetur diam vitae imperdiet iaculis. In faucibus, sem sit amet tincidunt egestas, magna ligula interdum leo.</p>
-                    <div className="reply"> 
-                        <Link to={"#"} className="comment-reply-link"><span><i className="fa-solid fa-share"></i>REPLY</span></Link> 
+                    <div className="reply">
+                        <Link to={"#"} className="comment-reply-link"><span><i className="fa-solid fa-share"></i>REPLY</span></Link>
                     </div>
                 </div>
             </div>
@@ -39,12 +44,12 @@ const CommentBlog = ({image, title}) =>{
     )
 }
 
-function BlogDetails(){
-    return(
+function BlogDetails() {
+    return (
         <>
             <div className="page-content">
                 <PageLayout desc={false} pageTitle="Blog Details " />
-                <section className="content-inner" style={{background: "white"}}>
+                <section className="content-inner" style={{ background: "white" }}>
                     <div className="container">
                         <div className="row ">
                             <div className="col-xl-8 col-lg-8">
@@ -57,7 +62,7 @@ function BlogDetails(){
                                             <ul>
                                                 <li className="post-author">
                                                     <Link to={"#"}>
-                                                        <img src={avat3} alt="" /> 
+                                                        <img src={avat3} alt="" />
                                                         <span>By Jone Doe</span>
                                                     </Link>
                                                 </li>
@@ -84,7 +89,7 @@ function BlogDetails(){
                                         </div>
                                         <div className="dz-share-post">
                                             <div className="post-tags">
-                                            <h6 className="m-b0 m-r10 d-inline">Tags:</h6>
+                                                <h6 className="m-b0 m-r10 d-inline">Tags:</h6>
                                                 <Link to={"#"}><span>Corporate</span></Link>
                                                 <Link to={"#"}><span>Blog</span></Link>
                                                 <Link to={"#"}><span>Marketing</span></Link>
@@ -96,7 +101,7 @@ function BlogDetails(){
                                                     <li><a target="_blank" className="fab fa-twitter" href="https://twitter.com/"></a></li>
                                                     <li><a target="_blank" className="fab fa-youtube" href="https://www.youtube.com/"></a></li>
                                                 </ul>
-                                            </div>									
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +109,7 @@ function BlogDetails(){
                                     <h4 className="title">Related Blog</h4>
                                 </div>
                                 <div className="row m-b30 m-sm-b10">
-                                    {relatedBlog.map((item, ind)=>(
+                                    {relatedBlog.map((item, ind) => (
                                         <div className="col-md-6 m-b30" key={ind}>
                                             <div className="dz-card style-1  blog-lg overlay-shine ">
                                                 <div className="dz-media ">
@@ -128,7 +133,7 @@ function BlogDetails(){
                                                 </div>
                                             </div>
                                         </div>
-                                    ))}                                   
+                                    ))}
                                 </div>
                                 <div className="clear" id="comment-list">
                                     <div className="comments-area style-1 clearfix" id="comments">
@@ -138,24 +143,24 @@ function BlogDetails(){
                                         <div className="clearfix">
                                             <ol className="comment-list">
                                                 <li className="comment">
-                                                    <CommentBlog image={avat1} title="Lillian Walsh"/>
+                                                    <CommentBlog image={avat1} title="Lillian Walsh" />
                                                     <ol className="children">
                                                         <li className="comment">
-                                                            <CommentBlog image={avat2} title="Walsh Nehan"/>
+                                                            <CommentBlog image={avat2} title="Walsh Nehan" />
                                                         </li>
                                                     </ol>
                                                 </li>
                                                 <li className="comment">
-                                                    <CommentBlog image={avat3} title="Boni Joye"/>
+                                                    <CommentBlog image={avat3} title="Boni Joye" />
                                                 </li>
-                                            </ol>                                            
+                                            </ol>
                                         </div>
-                                        
+
                                         <div className="widget-title">
                                             <h4 className="title">Leave A Reply</h4>
                                         </div>
                                         <div className="clearfix">
-                                            
+
                                             <div className="default-form comment-respond style-1" id="respond">
                                                 <form className="comment-form" id="commentform" method="post">
                                                     <p className="">
@@ -168,14 +173,14 @@ function BlogDetails(){
                                                     </p>
                                                     <p className="comment-form-comment">
                                                         <label>Message</label>
-                                                        <textarea rows="8" name="Message" placeholder="Message" id="Message" className="form-control"></textarea>
+                                                        <textarea rows={8} name="Message" placeholder="Message" id="Message" className="form-control"></textarea>
                                                     </p>
                                                     <p className="form-submit">
                                                         <button type="submit" className="btn btn-primary btn-skew btn-icon" id="submit"><span>Submit Now</span></button>
                                                     </p>
                                                 </form>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>

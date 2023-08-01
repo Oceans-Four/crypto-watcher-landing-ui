@@ -12,7 +12,7 @@ const updatesBlog = [
     
 ];
 
-function RecentNews(){
+const RecentNews = () => {
     return(
         <>
             {updatesBlog.map((data, ind)=>(

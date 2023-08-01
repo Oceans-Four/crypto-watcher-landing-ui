@@ -1,20 +1,20 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import PageLayout from '../layouts/PageLayout';
 
-function ContactUs(){
+const ContactUs = () => {
     const nav = useNavigate();
-    const submitHandler = (e) => {
+    const submitHandler = (e: React.SyntheticEvent) => {
         e.preventDefault();
         nav("/");
     };
-    return(
+    return (
         <>
             <div className="page-content">
                 <PageLayout desc={false} pageTitle="Contact Us" />
-                <section className="content-inner contact-form-wraper style-1">
-			        <div className="container">
+                <section className="content-inner contact-form-wrapper style-1">
+                    <div className="container">
                         <div className="row align-items-center">
                             <div className="col-xl-5 col-lg-5 m-b30">
                                 <div className="info-box">
@@ -22,21 +22,21 @@ function ContactUs(){
                                         <h2>Contact Information</h2>
                                         <p className="font-18">Fill up the form and our team will get back to you within 24 hours.</p>
                                     </div>
-                                    
+
                                     <div className="widget widget_about">
                                         <div className="widget widget_getintuch">
                                             <ul>
                                                 <li>
                                                     <i className="fa fa-phone"></i>
-                                                    <span>1800-123-4567<br/>+91 987-654-3210</span> 
+                                                    <span>1800-123-4567<br />+91 987-654-3210</span>
                                                 </li>
                                                 <li>
-                                                    <i className="fa fa-envelope"></i> 
-                                                    <span>info@example.com <br/>services@gmail.com</span>
+                                                    <i className="fa fa-envelope"></i>
+                                                    <span>info@example.com <br />services@gmail.com</span>
                                                 </li>
                                                 <li>
                                                     <i className="fas fa-map-marker-alt"></i>
-                                                    <span>Demo Address #8901 Marmora Road <br/>Chi Minh City, Vietnam</span>
+                                                    <span>Demo Address #8901 Marmora Road <br />Chi Minh City, Vietnam</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -54,7 +54,7 @@ function ContactUs(){
                                     </div>
                                 </div>
                             </div>
-                                
+
                             <div className="col-xl-7 col-lg-7">
                                 <div className="contact-box">
                                     <div className="card">
@@ -66,29 +66,29 @@ function ContactUs(){
                                             <form className="dzForm" onSubmit={(e) => submitHandler(e)}>
                                                 <div className="dzFormMsg"></div>
                                                 <input type="hidden" className="form-control" name="dzToDo" value="Contact" />
-                                                
+
                                                 <div className="row">
                                                     <div className="col-xl-6 mb-3 mb-md-4">
-                                                        <input name="dzFirstName"  type="text" className="form-control" placeholder="First Name" />
+                                                        <input name="dzFirstName" type="text" className="form-control" placeholder="First Name" />
                                                     </div>
                                                     <div className="col-xl-6 mb-3 mb-md-4">
                                                         <input name="dzLastName" type="text" className="form-control" placeholder="Last Name" />
                                                     </div>
                                                     <div className="col-xl-6 mb-3 mb-md-4">
-                                                        <input name="dzEmail"  type="text" className="form-control" placeholder="Email Address" />
+                                                        <input name="dzEmail" type="text" className="form-control" placeholder="Email Address" />
                                                     </div>
                                                     <div className="col-xl-6 mb-3 mb-md-4">
-                                                        <input name="dzPhoneNumber"  type="text" className="form-control" placeholder="Phone No." />
+                                                        <input name="dzPhoneNumber" type="text" className="form-control" placeholder="Phone No." />
                                                     </div>
                                                     <div className="col-xl-12 mb-3 mb-md-4">
-                                                        <textarea name="dzMessage"  className="form-control" placeholder="Message"></textarea>
+                                                        <textarea name="dzMessage" className="form-control" placeholder="Message"></textarea>
                                                     </div>
                                                     {/* <div className="col-xl-12 mb-3 mb-md-4">
                                                         <div className="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                                                         <input className="form-control d-none" style="display:none;" data-recaptcha="true"  data-error="Please complete the Captcha" />
                                                     </div> */}
                                                     <div className="col-xl-12">
-                                                        <button name="submit" type="submit" value="Submit" className="btn btn-primary">Submit Now</button>								
+                                                        <button name="submit" type="submit" value="Submit" className="btn btn-primary">Submit Now</button>
                                                     </div>
                                                 </div>
                                             </form>

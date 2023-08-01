@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //images
 import shape1 from './../assets/images/home-banner/shape1.png';
@@ -7,12 +6,12 @@ import bgimage from './../assets/images/background/bg1.jpg';
 import logowhite from './../assets/images/logo-white.png';
 import flags from './../assets/images/footer/world-map-with-flags1.png';
 
-function Footer(){
-    return(
+const Footer = () => {
+    return (
         <>
             <footer className="site-footer style-1" id="footer">
                 <img className="bg-shape1" src={shape1} alt="" />
-                <div className="footer-top background-luminosity" style={{backgroundImage: "url("+ bgimage +")"}}>
+                <div className="footer-top background-luminosity" style={{ backgroundImage: "url(" + bgimage + ")" }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-4 col-lg-12 col-md-12" >

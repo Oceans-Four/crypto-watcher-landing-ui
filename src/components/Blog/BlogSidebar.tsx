@@ -1,5 +1,4 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import pic1 from './../../assets/images/blog/small/pic1.jpg';
 import pic2 from './../../assets/images/blog/small/pic2.jpg';
@@ -7,24 +6,24 @@ import pic3 from './../../assets/images/blog/small/pic3.jpg';
 
 
 const categories = [
-    {title:'Business(10)'}, {title:'Case Study (13)'},
-    {title:'Insights (9)'}, {title:'World (3)'},
-    {title:'Tax Solutions (12)'}, {title:'Creative (6)'}
+    { title: 'Business(10)' }, { title: 'Case Study (13)' },
+    { title: 'Insights (9)' }, { title: 'World (3)' },
+    { title: 'Tax Solutions (12)' }, { title: 'Creative (6)' }
 ];
 const postData = [
-    {image: pic1, title:'Things That Make You Love Cryptocurrency', date:'01 Jan 2023'},
-    {image: pic2, title:'7 Ingenious Ways You Can Do With Cryptocurrency.', date:'10 Jan 2023'},
-    {image: pic3, title:'14 Days To A Better Crypto Currency.', date:'15 Jan 2023'},
+    { image: pic1, title: 'Things That Make You Love Cryptocurrency', date: '01 Jan 2023' },
+    { image: pic2, title: '7 Ingenious Ways You Can Do With Cryptocurrency.', date: '10 Jan 2023' },
+    { image: pic3, title: '14 Days To A Better Crypto Currency.', date: '15 Jan 2023' },
 ];
 const tagData = [
-    {title:'Business'},{title:'Corporate'},
-    {title:'Blog'},{title:'Marketing'},
-    {title:'Creative'},{title:'Web'},
-    {title:'Workers'},{title:'Modern'},
+    { title: 'Business' }, { title: 'Corporate' },
+    { title: 'Blog' }, { title: 'Marketing' },
+    { title: 'Creative' }, { title: 'Web' },
+    { title: 'Workers' }, { title: 'Modern' },
 ];
 
-const BlogSidebar = () =>{
-    return(
+const BlogSidebar = () => {
+    return (
         <>
             <aside className="side-bar sticky-top right">
                 <div className="widget">
@@ -50,7 +49,7 @@ const BlogSidebar = () =>{
                         <h4 className="title">Categories</h4>
                     </div>
                     <ul>
-                        {categories.map((data, ind)=>(
+                        {categories.map((data, ind) => (
                             <li className="cat-item" key={ind}>
                                 <Link to={"#"}>{data.title}</Link>
                             </li>
@@ -63,7 +62,7 @@ const BlogSidebar = () =>{
                         <h4 className="title">Recent Post</h4>
                     </div>
                     <div className="widget-post-bx">
-                        {postData.map((item, ind)=>(
+                        {postData.map((item, ind) => (
                             <div className="widget-post clearfix" key={ind}>
                                 <div className="dz-media">
                                     <img src={item.image} alt="" />
@@ -76,7 +75,7 @@ const BlogSidebar = () =>{
                                         </ul>
                                     </div>
                                 </div>
-                            </div>                                    
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -86,13 +85,13 @@ const BlogSidebar = () =>{
                         <h4 className="title">Popular Tags</h4>
                     </div>
                     <div className="tagcloud">
-                        {tagData.map((data, index)=>(
+                        {tagData.map((data, index) => (
                             <Link to={"#"} key={index}>{data.title}</Link>
                         ))}
-                        
+
                     </div>
                 </div>
-            </aside>            
+            </aside>
         </>
     )
 }

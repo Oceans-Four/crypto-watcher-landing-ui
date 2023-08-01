@@ -1,6 +1,6 @@
-import React,{useState } from 'react';
-import {Link, useNavigate} from 'react-router-dom';
-import {Dropdown} from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Dropdown } from 'react-bootstrap';
 
 //components
 import BannerCard from '../components/Home/BannerCard';
@@ -24,20 +24,20 @@ import avatar3 from './../assets/images/avatar/avatar3.jpg';
 
 
 const trustBlog = [
-	{image: wallet, title:'Buy Cryptocurrency with cash'}, 
-	{image: friend, title:'Cryptocurrency Consultancy'}, 
+	{ image: wallet, title: 'Buy Cryptocurrency with cash' },
+	{ image: friend, title: 'Cryptocurrency Consultancy' },
 ];
 
-function Home(){
+const Home = () => {
 	const nav = useNavigate();
-    const formDetails = (e) => {
-        e.preventDefault();
-        nav("/contact-us");
-    };
-	const [selecttext, setSelectText] = useState([coin4, 'Bitcoin']);
-	return(
+	const formDetails = (e: React.SyntheticEvent) => {
+		e.preventDefault();
+		nav("/contact-us");
+	};
+	const [selectText, setSelectText] = useState([coin4, 'Bitcoin']);
+	return (
 		<>
-			<div className="page-content">				
+			<div className="page-content">
 				<div className="main-bnr style-1">
 					<div className="container">
 						<div className="row align-items-center">
@@ -74,21 +74,21 @@ function Home(){
 								<p>Trust comes from experience. Many of the pleased customers may function as a guide for you.</p>
 							</div>
 							<div className="row">
-								{trustBlog.map((data, ind)=>(
-									<div className="col-lg-6 m-b30"  key={ind}>
-										<div className="icon-bx-wraper style-2">
+								{trustBlog.map((data, ind) => (
+									<div className="col-lg-6 m-b30" key={ind}>
+										<div className="icon-bx-wrapper style-2">
 											<div className="icon-media">
 												<img src={data.image} alt="" />
 											</div>
 											<div className="icon-content">
 												<h4 className="title">{data.title}</h4>
 												<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-												<Link  className="btn btn-primary btn-gradient btn-shadow" to={"/about-us"}>Read More</Link>
+												<Link className="btn btn-primary btn-gradient btn-shadow" to={"/about-us"}>Read More</Link>
 											</div>
 										</div>
 									</div>
-								))}	
-								
+								))}
+
 							</div>
 						</div>
 					</div>
@@ -98,35 +98,35 @@ function Home(){
 								<h4 className="title m-t0">How to Purchase from us ?</h4>
 								<p>Fill out the below form and we will contact you via email & details</p>
 							</div>
-							<form  className="dz-form"  onSubmit={(e) => formDetails(e)}>
+							<form className="dz-form" onSubmit={(e) => formDetails(e)}>
 								<div className="form-wrapper">
 									<div className="flex-1">
 										<div className="row g-3">
 											<div className="col-xl-3 col-md-6 " >
-												<input name="dzName" type="text" required="" placeholder="Wallet Address" className="form-control" />
+												<input name="dzName" type="text" required placeholder="Wallet Address" className="form-control" />
 											</div>
 											<div className="col-xl-3 col-md-6 " >
 												<Dropdown className="select-drop">
 													<Dropdown.Toggle as="div" className="i-false select-drop-toggle">
-														<img src={selecttext[0]} alt=""/> {selecttext[1]} <i className="fa-sharp fa-solid fa-angle-down" />
+														<img src={selectText[0]} alt="" /> {selectText[1]} <i className="fa-sharp fa-solid fa-angle-down" />
 													</Dropdown.Toggle>
 													<Dropdown.Menu>
-														<Dropdown.Item onClick={()=>setSelectText([coin4,"Bitcoin"])}><img src={coin4} alt=""/> Bitcoin</Dropdown.Item>
-														<Dropdown.Item onClick={()=>setSelectText([coin3, "Ethereum"])}><img src={coin3} alt=""/> Ethereum</Dropdown.Item>
-														<Dropdown.Item onClick={()=>setSelectText([coin1, "Tether"])}><img src={coin1} alt=""/> Tether</Dropdown.Item>
+														<Dropdown.Item onClick={() => setSelectText([coin4, "Bitcoin"])}><img src={coin4} alt="" /> Bitcoin</Dropdown.Item>
+														<Dropdown.Item onClick={() => setSelectText([coin3, "Ethereum"])}><img src={coin3} alt="" /> Ethereum</Dropdown.Item>
+														<Dropdown.Item onClick={() => setSelectText([coin1, "Tether"])}><img src={coin1} alt="" /> Tether</Dropdown.Item>
 													</Dropdown.Menu>
 
 												</Dropdown>
 											</div>
 											<div className="col-xl-3 col-md-6 " >
-												<input name="dzName" type="text" required="" placeholder="How much worth in $?" className="form-control" />
+												<input name="dzName" type="text" required placeholder="How much worth in $?" className="form-control" />
 											</div>
 											<div className="col-xl-3 col-md-6 ">
-												<input name="dzName" type="text" required="" placeholder="Email Address" className="form-control" />
+												<input name="dzName" type="text" required placeholder="Email Address" className="form-control" />
 											</div>
 										</div>
 									</div>
-									<button type="submit" className="btn btn-lg btn-gradient btn-primary btn-shadow">Get Strated</button>
+									<button type="submit" className="btn btn-lg btn-gradient btn-primary btn-shadow">Get Started</button>
 								</div>
 							</form>
 						</div>
@@ -157,7 +157,7 @@ function Home(){
 								<RecentNews />
 							</div>
 							<div className="col-xl-5 col-lg-12 m-b30 " >
-								<div className="dz-card style-2" style={{backgroundImage: "url("+ bloglg +")"}}>
+								<div className="dz-card style-2" style={{ backgroundImage: "url(" + bloglg + ")" }}>
 									<div className="dz-category">
 										<ul className="dz-badge-list">
 											<li><Link to={"#"} className="dz-badge">14 Fan 2022</Link></li>
@@ -169,7 +169,7 @@ function Home(){
 											<ul>
 												<li className="post-author">
 													<Link to={"#"}>
-														<img src={avatar3} alt=""  className="me-2"/>
+														<img src={avatar3} alt="" className="me-2" />
 														<span>By Noare</span>
 													</Link>
 												</li>
@@ -182,8 +182,8 @@ function Home(){
 						</div>
 					</div>
 				</section>
-			</div>		
+			</div>
 		</>
 	)
-} 
+}
 export default Home;

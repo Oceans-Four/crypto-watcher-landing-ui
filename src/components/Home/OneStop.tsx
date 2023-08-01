@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //Images
 import Icon9 from './../../assets/images/icons/icon9.svg';
@@ -11,19 +11,19 @@ import pic1 from './../../assets/images/about/pic1.jpg';
 import support1 from './../../assets/images/icons/support1.png';
 
 const cardData = [
-    {image: Icon9, title:'Competitive Pricing'},
-    {image: Icon10, title:'Support'},
-    {image: Icon11, title:'Fast and Easy KYC'},
-    {image: Icon12, title:'Security'},
-    {image: Icon13, title:'Fast Transaction'},
+    { image: Icon9, title: 'Competitive Pricing' },
+    { image: Icon10, title: 'Support' },
+    { image: Icon11, title: 'Fast and Easy KYC' },
+    { image: Icon12, title: 'Security' },
+    { image: Icon13, title: 'Fast Transaction' },
 ];
 
-function OneStop(){
-    return(
+const OneStop = () => {
+    return (
         <>
-            {cardData.map((item, ind)=>(
+            {cardData.map((item, ind) => (
                 <div className="col-xl-4 col-md-6 m-b60" key={ind}>
-                    <div className="icon-bx-wraper style-3 text-center">
+                    <div className="icon-bx-wrapper style-3 text-center">
                         <div className="icon-media">
                             <img src={item.image} alt="" />
                         </div>
@@ -35,7 +35,7 @@ function OneStop(){
                 </div>
             ))}
             <div className="col-xl-4 col-md-6 m-b60">
-                <div className="icon-bx-wraper style-4" style={{backgroundImage: "url("+ pic1 + ")"}}>
+                <div className="icon-bx-wrapper style-4" style={{ backgroundImage: "url(" + pic1 + ")" }}>
                     <div className="inner-content">
                         <div className="icon-media m-b30">
                             <img src={support1} alt="" />
