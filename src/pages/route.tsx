@@ -6,7 +6,6 @@ import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import Home from './Home';
 import AboutUs from './AboutUs';
-import Pricing from './Pricing.tsx';
 import BlogList from './BlogList';
 import BlogGrid from './BlogGrid';
 import BlogDetails from './BlogDetails';
@@ -20,7 +19,6 @@ function Index() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about-us' element={<AboutUs />} />
-					<Route path='/pricing' element={<Pricing />} />
 					<Route path='/blog-list' element={<BlogList />} />
 					<Route path='/blog-grid' element={<BlogGrid />} />
 					<Route path='/blog-details' element={<BlogDetails />} />

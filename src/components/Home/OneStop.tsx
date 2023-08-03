@@ -11,7 +11,7 @@ import pic1 from './../../assets/images/about/pic1.jpg';
 import support1 from './../../assets/images/icons/support1.png';
 
 const cardData = [
-    { image: Icon9, title: 'Competitive Pricing' },
+    { image: Icon9, title: 'Free to Use' },
     { image: Icon10, title: 'Support' },
     { image: Icon11, title: 'Fast and Easy KYC' },
     { image: Icon12, title: 'Security' },

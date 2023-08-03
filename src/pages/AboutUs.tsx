@@ -92,7 +92,7 @@ function AboutUs() {
                         </div>
                     </div>
                 </section>
-                <section className="content-inner bg-light pricing-plan-wrapper2">
+                {/* <section className="content-inner bg-light pricing-plan-wrapper2">
                     <img className="bg-shape2" src={Shape1} alt="" />
                     <div className="container">
                         <div className="section-head text-center">
@@ -102,8 +102,8 @@ function AboutUs() {
                             <PriceBlog />
                         </div>
                     </div>
-                </section>
-                <section className="form-sec bg-light">
+                </section> */}
+                {/* <section className="form-sec bg-light">
                     <img className="bg-shape2" src={Shape1} alt="" />
 
                     <div className="container">
@@ -146,7 +146,7 @@ function AboutUs() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <section className="content-inner bg-white blog-wrapper">
                     <img className="bg-shape1" src={Shape1} alt="" />
                     <div className="container">

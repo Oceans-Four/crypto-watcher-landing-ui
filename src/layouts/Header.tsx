@@ -49,8 +49,7 @@ const Header = () => {
                                 <ul className="nav navbar-nav navbar">
                                     <li><NavLink to={"/"}>Home</NavLink></li>
                                     <li><NavLink to={"/about-us"}>About Us</NavLink></li>
-                                    <li><NavLink to={"/pricing"}>Pricing</NavLink></li>
-                                    <li className={`sub-menu-down ${showMenu ? "open" : ""}`} id="menushow"
+                                    {/* <li className={`sub-menu-down ${showMenu ? "open" : ""}`} id="menushow"
                                         onClick={() => setShowMenu(!showMenu)}
 
                                     ><Link to={"#"}>Blog</Link>
@@ -59,7 +58,7 @@ const Header = () => {
                                             <li><NavLink to={"/blog-grid"}>Blog grid</NavLink></li>
                                             <li><NavLink to={"/blog-details"}>Blog details</NavLink></li>
                                         </ul>
-                                    </li>
+                                    </li> */}
                                     <li><NavLink to={"/contact-us"}>Contact Us</NavLink></li>
                                 </ul>
 

@@ -41,8 +41,8 @@ const PriceList = () => {
 }
 
 const pricingBlog = [
-    { price: '0', title: 'Lite', title2: 'Life-includes:' },
-    { price: '11', title: 'Pro', content: <div className="tagline">POPULER</div>, title2: 'Everything in Lite, Plus' },
+    { price: '0', title: 'Free', title2: 'Includes:' },
+    { price: '11', title: 'Pro', content: <div className="tagline">POPULAR</div>, title2: 'Everything in Lite, Plus' },
     { price: '22', title: 'Ultimate', title2: 'Everything in Lite' },
 ];
 

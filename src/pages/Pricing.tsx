@@ -6,7 +6,7 @@ import PriceBlog from '../components/About/PriceBlog';
 import Shap1 from './../assets/images/home-banner/shape1.png';
 import Shap3 from './../assets/images/home-banner/shape3.png';
 
-function Pricing(){
+const Pricing = () => {
     return(
         <>
             <div className="page-content">

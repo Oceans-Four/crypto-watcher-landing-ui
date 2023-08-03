@@ -14,7 +14,7 @@ const Footer = () => {
                 <div className="footer-top background-luminosity" style={{ backgroundImage: "url(" + bgimage + ")" }}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-xl-4 col-lg-12 col-md-12" >
+                            <div className="col-xl-6 col-lg-12 col-md-12" >
                                 <div className="widget widget_about">
                                     <div className="footer-logo logo-white">
                                         <Link to={"/"}><img src={logowhite} alt="" /></Link>
@@ -30,19 +30,16 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6" >
+                            <div className="col-xl-3 col-lg-6 col-md-4 col-sm-6" >
                                 <div className="widget widget_services">
                                     <h4 className="widget-title">Other Links</h4>
                                     <ul>
                                         <li><Link to={"/about-us"}>About Us</Link></li>
-                                        <li><Link to={"/pricing"}>Pricing Plan</Link></li>
-                                        <li><Link to={"/blog-list"}>Blog List</Link></li>
-                                        <li><Link to={"/blog-grid"}>Our Blogs</Link></li>
                                         <li><Link to={"/contact-us"}>Contact Us</Link></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-4 col-sm-6" >
+                            {/* <div className="col-xl-3 col-lg-4 col-sm-6" >
                                 <div className="widget recent-posts-entry">
                                     <h4 className="widget-title">Blog Posts</h4>
                                     <div className="widget-post-bx">
@@ -61,13 +58,15 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-4 col-sm-12" >
+                            </div> */}
+                            <div className="col-xl-3 col-lg-6 col-sm-12" >
                                 <div className="widget widget_locations">
                                     <h4 className="widget-title">Locations</h4>
                                     <div className="clearfix">
-                                        <h6 className="title">Washington</h6>
-                                        <p>1559 Alabama Ave SE, DC 20032, Washington, USA</p>
+                                        <h6 className="title">Pittsburgh, PA</h6>
+                                        <h6 className="title">Washington D.C.</h6>
+                                        <h6 className="title">Jacksonville, FL</h6>
+                                        <p>USA</p>
                                         <img src={flags} alt="" />
                                     </div>
                                 </div>
