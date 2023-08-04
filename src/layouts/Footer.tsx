@@ -19,7 +19,7 @@ const Footer = () => {
                                     <div className="footer-logo logo-white">
                                         <Link to={"/"}><img src={logowhite} alt="" /></Link>
                                     </div>
-                                    <p>CryptoZone is a Crypto & Crypto Website by DexignZone lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                                    <p>CryptoWatcher, your ultimate destination for staying updated on the ever-evolving world of cryptocurrencies! Our platform is your one-stop solution for all things crypto, offering comprehensive Crypto Market News, real-time price data on the most popular cryptocurrencies, and an intuitive dashboard to manage your personalized watch lists and explore historical data.</p>
                                     <div className="dz-social-icon transparent space-10">
                                         <ul>
                                             <li><a target="_blank" className="fab fa-facebook-f" href="https://www.facebook.com/"></a></li>{" "}

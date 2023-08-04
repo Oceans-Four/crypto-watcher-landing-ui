@@ -90,7 +90,7 @@ const Home = () => {
 				<section className="content-inner bg-light icon-section section-wrapper2">
 					<div className="container">
 						<div className="section-head text-center">
-							<h2 className="title">One-stop solution to monitor and track <span className="text-primary"> Cryptocurrency </span> ! </h2>
+							<h2 className="title">One-stop solution to monitor and track <span className="text-primary"> Cryptocurrencies </span> - for free </h2>
 						</div>
 						<div className="row sp60">
 							<OneStop />

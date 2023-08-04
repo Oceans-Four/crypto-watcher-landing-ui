@@ -38,11 +38,11 @@ const ImageBox = ({ image, changeClass }: ImageBoxProps) => {
 }
 
 function AboutUs() {
-    const nav = useNavigate();
-    const formDetails = (e: React.SyntheticEvent) => {
-        e.preventDefault();
-        nav("/contact-us");
-    };
+    // const nav = useNavigate();
+    // const formDetails = (e: React.SyntheticEvent) => {
+    //     e.preventDefault();
+    //     nav("/contact-us");
+    // };
     const [isOpen, setOpen] = useState(false)
     return (
         <>
@@ -65,8 +65,9 @@ function AboutUs() {
                             </div>
                             <div className="col-lg-6 about-content ps-lg-5 m-b30">
                                 <div className="section-head">
-                                    <h2 className="title">The World’s 1st ICO Platform That Offers Rewards</h2>
-                                    <p className="m-0 lh-base">We are an independent gym that is committed to working with you to gain the results you want. Whether your aim is to loose weight</p>
+                                    <h2 className="title">Join the CryptoWatcher Community</h2>
+                                    <p className="m-0 lh-base">Whether you're a seasoned investor, a curious observer, or a passionate crypto enthusiast, CryptoWatcher has everything you need to navigate the exciting world of cryptocurrencies. Start exploring, learning, and making informed decisions with CryptoWatcher today!
+                                    </p>
                                 </div>
                                 <Link to={"/contact-us"} className="btn btn-lg btn-primary btn-shadow text-uppercase">Contact Us</Link>
                             </div>

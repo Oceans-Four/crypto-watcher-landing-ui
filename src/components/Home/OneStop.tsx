@@ -11,10 +11,10 @@ import pic1 from './../../assets/images/about/pic1.jpg';
 import support1 from './../../assets/images/icons/support1.png';
 
 const cardData = [
-    { image: Icon9, title: 'Free to Use' },
-    { image: Icon10, title: 'Support' },
+    { image: Icon9, title: 'Real-Time Data' },
+    { image: Icon10, title: 'User-Friendly' },
     { image: Icon11, title: 'Fast and Easy KYC' },
-    { image: Icon12, title: 'Security' },
+    { image: Icon12, title: 'Secure' },
     { image: Icon13, title: 'Fast Transaction' },
 ];
 
@@ -41,7 +41,7 @@ const OneStop = () => {
                             <img src={support1} alt="" />
                         </div>
                         <div className="icon-content">
-                            <Link to={"/contact-us"} className="btn btn-primary">Call Us</Link>
+                            <Link to={"/contact-us"} className="btn btn-primary">Get In Touch</Link>
                         </div>
                     </div>
                 </div>
