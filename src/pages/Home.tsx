@@ -98,44 +98,6 @@ const Home = () => {
 					</div>
 					<img className="bg-shape1" src={Shape1} alt="" />
 				</section>
-				<section className="content-inner bg-white blog-wrapper">
-					<img className="bg-shape1" src={Shape1} alt="" />
-
-					<div className="container">
-						<div className="row">
-							<div className="col-xl-7 col-lg-12">
-								<div className="section-head " >
-									<h6 className="sub-title text-primary">FROM OUR BLOG</h6>
-									<h2 className="title">Recent News &amp; Updates</h2>
-								</div>
-								<RecentNews />
-							</div>
-							<div className="col-xl-5 col-lg-12 m-b30 " >
-								<div className="dz-card style-2" style={{ backgroundImage: "url(" + bloglg + ")" }}>
-									<div className="dz-category">
-										<ul className="dz-badge-list">
-											<li><Link to={"#"} className="dz-badge">14 Fan 2022</Link></li>
-										</ul>
-									</div>
-									<div className="dz-info">
-										<h2 className="dz-title"><Link to={"/blog-details"} className="text-white">Directly support individuals Crypto</Link></h2>
-										<div className="dz-meta">
-											<ul>
-												<li className="post-author">
-													<Link to={"#"}>
-														<img src={avatar3} alt="" className="me-2" />
-														<span>By Noare</span>
-													</Link>
-												</li>
-												<li className="post-date"><Link to={"#"}> 12 May 2022</Link></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
 			</div>
 		</>
 	)
