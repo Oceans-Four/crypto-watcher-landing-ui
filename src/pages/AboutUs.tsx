@@ -154,7 +154,7 @@ function AboutUs() {
                         <div className="row">
                             <div className="col-xl-7 col-lg-12">
                                 <div className="section-head " >
-                                    <h6 className="sub-title text-primary">FROM OUR BLOG</h6>
+                                    <h6 className="sub-title text-primary">FROM OUR DEV BLOG</h6>
                                     <h2 className="title">Recent News &amp; Updates</h2>
                                 </div>
                                 <RecentNews />
@@ -167,16 +167,16 @@ function AboutUs() {
                                         </ul>
                                     </div>
                                     <div className="dz-info">
-                                        <h2 className="dz-title"><Link to={"/blog-details"} className="text-white">Directly support individuals Crypto</Link></h2>
+                                        <h2 className="dz-title"><Link to={"https://github.com/Oceans-Four/crypto-watcher-landing-ui"} className="text-white">CryptoWatcher V2 is coming along</Link></h2>
                                         <div className="dz-meta">
                                             <ul>
                                                 <li className="post-author">
                                                     <Link to={"#"}>
                                                         <img src={avatar3} alt="" className="me-2" />
-                                                        <span>By Noare</span>
+                                                        <span>By Ocean's Four</span>
                                                     </Link>
                                                 </li>
-                                                <li className="post-date"><Link to={"#"}> 12 May 2022</Link></li>
+                                                <li className="post-date"><Link to={"#"}> 5 Aug 2023</Link></li>
                                             </ul>
                                         </div>
                                     </div>

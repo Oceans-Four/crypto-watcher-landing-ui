@@ -6,9 +6,9 @@ import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import Home from './Home';
 import AboutUs from './AboutUs';
-import BlogList from './BlogList';
-import BlogGrid from './BlogGrid';
-import BlogDetails from './BlogDetails';
+// import BlogList from './BlogList';
+// import BlogGrid from './BlogGrid';
+// import BlogDetails from './BlogDetails';
 import ContactUs from './ContactUs';
 
 function Index() {
@@ -19,9 +19,9 @@ function Index() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about-us' element={<AboutUs />} />
-					<Route path='/blog-list' element={<BlogList />} />
+					{/* <Route path='/blog-list' element={<BlogList />} />
 					<Route path='/blog-grid' element={<BlogGrid />} />
-					<Route path='/blog-details' element={<BlogDetails />} />
+					<Route path='/blog-details' element={<BlogDetails />} /> */}
 					<Route path='/contact-us' element={<ContactUs />} />
 				</Routes>
 				<Footer />

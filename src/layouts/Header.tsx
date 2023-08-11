@@ -37,7 +37,7 @@ const Header = () => {
                             </button>
                             <div className="extra-nav">
                                 <div className="extra-cell">
-                                    <a className="btn btn-outline-primary text-white" target="_blank" rel="noreferrer" href="https://cryptozone.dexignzone.com/react/demo/login">Login</a>
+                                    <a className="btn btn-outline-primary text-white" target="_blank" rel="noreferrer" href="https://crypto-watcher-dashboard-ui.netlify.app/login">Login</a>
                                     <a className="btn btn-primary btn-gradient btn-shadow" target="_blank" rel="noreferrer" href="https://cryptozone.dexignzone.com/react/demo/page-register">Register</a>
                                 </div>
                             </div>

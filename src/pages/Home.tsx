@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 //components
 import BannerCard from '../components/Home/BannerCard';
 import OneStop from '../components/Home/OneStop';
-import RecentNews from '../components/Home/RecentNews';
 
 //images
 import baner1 from './../assets/images/home-banner/img1.png';
@@ -14,8 +13,6 @@ import Shape3 from './../assets/images/home-banner/shape3.png';
 import wallet from './../assets/images/icons/wallet.svg';
 import friend from './../assets/images/icons/friend.svg';
 
-import bloglg from './../assets/images/blog/blog-ig.png';
-import avatar3 from './../assets/images/avatar/avatar3.jpg';
 // import FillOutForm from '../components/Home/FillOutForm';
 
 
