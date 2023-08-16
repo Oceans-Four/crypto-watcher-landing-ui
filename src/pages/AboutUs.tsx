@@ -163,7 +163,7 @@ function AboutUs() {
                                 <div className="dz-card style-2" style={{ backgroundImage: "url(" + bloglg + ")" }}>
                                     <div className="dz-category">
                                         <ul className="dz-badge-list">
-                                            <li><Link to={"#"} className="dz-badge">14 Fan 2022</Link></li>
+                                            <li><Link to={"#"} className="dz-badge">Aug 5, 2023</Link></li>
                                         </ul>
                                     </div>
                                     <div className="dz-info">
@@ -176,7 +176,7 @@ function AboutUs() {
                                                         <span>By Ocean's Four</span>
                                                     </Link>
                                                 </li>
-                                                <li className="post-date"><Link to={"#"}> 5 Aug 2023</Link></li>
+                                                <li className="post-date"><Link to={"#"}> Aug 5, 2023</Link></li>
                                             </ul>
                                         </div>
                                     </div>

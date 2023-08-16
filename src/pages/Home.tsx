@@ -16,9 +16,9 @@ import friend from './../assets/images/icons/friend.svg';
 // import FillOutForm from '../components/Home/FillOutForm';
 
 
-const trustBlog = [
-	{ image: wallet, title: 'Buy Cryptocurrency with cash' },
-	{ image: friend, title: 'Cryptocurrency Consultancy' },
+const trustHighlights = [
+	{ image: friend, title: 'Cryptocurrency Market Watch', description: 'Check bitcoin and cryptocurrency prices, performance, and market capitalization, in one dashboard.', button: 'Read More' },
+	{ image: wallet, title: 'Simulated Crypto Trading & Cryptocurrency News', description: 'Paper Trading with popular cryptocurrencies and news on bitcoin and other cryptocurrencies.', button: 'Read More' },
 ];
 
 const Home = () => {
@@ -61,7 +61,7 @@ const Home = () => {
 								<p>Convenience at your fingertips for tracking Cryptocurrency prices, and many other features available with a free account.</p>
 							</div>
 							<div className="row">
-								{trustBlog.map((data, ind) => (
+								{trustHighlights.map((data, ind) => (
 									<div className="col-lg-6 m-b30" key={ind}>
 										<div className="icon-bx-wrapper style-2">
 											<div className="icon-media">
@@ -69,8 +69,8 @@ const Home = () => {
 											</div>
 											<div className="icon-content">
 												<h4 className="title">{data.title}</h4>
-												<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-												<Link className="btn btn-primary btn-gradient btn-shadow" to={"/about-us"}>Read More</Link>
+												<p>{data.description}</p>
+												<Link className="btn btn-primary btn-gradient btn-shadow" to={"/about-us"}>{data.button}</Link>
 											</div>
 										</div>
 									</div>

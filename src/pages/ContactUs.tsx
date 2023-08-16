@@ -32,11 +32,11 @@ const ContactUs = () => {
                                                 </li>
                                                 <li>
                                                     <i className="fa fa-envelope"></i>
-                                                    <span>info@example.com <br />services@gmail.com</span>
+                                                    <span>contact@radixpoint.dev <br />robtrostle@yahoo.com</span>
                                                 </li>
                                                 <li>
                                                     <i className="fas fa-map-marker-alt"></i>
-                                                    <span>Demo Address #8901 Marmora Road <br />Chi Minh City, Vietnam</span>
+                                                    <span>Washington D.C. <br />Jacksonville, Florida</span>
                                                 </li>
                                             </ul>
                                         </div>

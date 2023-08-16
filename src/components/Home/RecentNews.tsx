@@ -7,7 +7,7 @@ import avatar1 from './../../assets/images/avatar/avatar1.jpg';
 import avatar2 from './../../assets/images/avatar/avatar2.jpg';
 
 const updatesBlog = [
-    {image1: blog1, image2: avatar1, title:'Adding a landing page using React.'},
+    {image1: blog1, image2: avatar1, title:'Adding a landing page using React.', date: 'Aug 3, 2023'},
     // {image1: blog2, image2: avatar2 , title:'Things That Make You Love Cryptocurrency.'},
     
 ];
@@ -20,7 +20,7 @@ const RecentNews = () => {
                     <div className="dz-media">
                         <Link to={"https://github.com/Oceans-Four/crypto-watcher-landing-ui"}><img src={data.image1} alt="" /></Link>
                         <ul className="dz-badge-list">
-                            <li><Link to={"#"} className="dz-badge">14 Fan 2022</Link></li>
+                            <li><Link to={"#"} className="dz-badge">{data.date}</Link></li>
                         </ul>
                         <Link to={"https://github.com/Oceans-Four/crypto-watcher-landing-ui"} className="btn btn-secondary">Visit GitHub</Link>
                     </div>
@@ -33,7 +33,7 @@ const RecentNews = () => {
                                         <span>By radixpoint</span>
                                     </Link>
                                 </li>
-                                <li className="post-date"><Link to={"#"}> 5 Aug 2023</Link></li>
+                                <li className="post-date"><Link to={"#"}>{data.date}</Link></li>
                             </ul>
                         </div>
                         <h4 className="dz-title"><Link to={"https://github.com/Oceans-Four/crypto-watcher-landing-ui"}>{data.title}</Link></h4>
