@@ -24325,7 +24325,7 @@ ul a.rsswidget:hover {
 .main-bnr {
   height: 920px;
   position: relative;
-  background-image: url(../images/home-banner/bg.jpg);
+  background-image: url(../images/home-banner/bg.webp);
   background-color: #261355;
   display: flex;
   background-size: cover;

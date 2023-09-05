@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 //images
 import shape1 from './../assets/images/home-banner/shape1.png';
-import bgimage from './../assets/images/background/bg1.jpg';
+import bgimage from './../assets/images/background/bg1.webp';
 import logowhite from './../assets/images/logo-white.png';
 import flags from './../assets/images/footer/world-map-with-flags1.png';
 
